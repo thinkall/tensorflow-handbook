@@ -235,7 +235,7 @@ TensorBoard的使用有以下注意事項：
     .. code-block:: python
 
         import tensorflow_datasets as tfds
-        dataset = tfds.load("mnist", split=tfds.Split.TRAIN)
+        dataset = tfds.load("mnist", split=tfds.Split.TRAIN, as_supervised=True)
 
     即可快速載入MNIST數據集。
 
@@ -692,7 +692,7 @@ AutoGraph：將Python控制流轉換爲TensorFlow計算圖
     :lines: 112-136
 
 
-關於圖執行模式的更多內容可參見 :doc:`/zh/appendix/static`。
+關於圖執行模式的更多內容可參見 :doc:`../appendix/static`。
 
 ``tf.TensorArray`` ：TensorFlow 動態數組 *
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
